@@ -1,5 +1,13 @@
 {
   "receipe": [
-    
+    {
+      "title": "samausa",
+      "ingredient": "potatos",
+      "time": "8pm",
+      "img": "https://github.com/surhud004/Foodish/raw/main/public/logo.ico",
+      "instr": "boil pototoes",
+      "status": false,
+      "id": 1
+    }
   ]
 }

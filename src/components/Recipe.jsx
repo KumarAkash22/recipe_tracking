@@ -32,14 +32,16 @@ export const Recipe = () => {
             setTodo(res)
         })
      }
-   return  <form onSubmit={(e)=>e.preventDefault()}>
+   return <>
+    <form onSubmit={(e)=>e.preventDefault()}>
        <input placeholder="Title" type="text"onChange={(e) =>setTitle(e.target.value)}/> <br/>
         <input placeholder="ingredients" type="text" onChange={(e) =>setIngredient(e.target.value)} /> <br/>
         <input placeholder="time to cook" type={Date}  onChange={(e) =>setTime(e.target.value)}/> <br/>
-       <input placeholder="image" type= "file" onChange={(e) =>setImg(e.target.value)}/> <br/>
+       <input placeholder="image" type= "img" onChange={(e) =>setImg(e.target.value)}/> <br/>
        <input placeholder="instruction" onChange={(e) =>setInstr(e.target.value)}/> <br/>
    
    <button onClick={add}>submit</button>
+   {/* <button onClick={card}>Card</button> */}
    {todo.map((e)=>(
        <>
        <div>{e.title}</div>
@@ -50,6 +52,7 @@ export const Recipe = () => {
        </>
    ))}
    </form>
+   </>
   
    
 }
